@@ -1,2 +1,2 @@
-# temponage-web
+# johnratius.github.io
 My website
