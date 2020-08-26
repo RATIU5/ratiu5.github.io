@@ -43,7 +43,7 @@ export default function Home() {
 							<img src="/avatar_op.png" className={styles.avatar}></img>
 							<div className={styles.devider}></div>
 							<h1 className={styles.title}>
-								RATIU5
+								John Memmott (RATIU5)
 							</h1>
 						</div>
 					</div>
@@ -92,13 +92,10 @@ export default function Home() {
 						<div className={styles.aboutContentContainer}>
 							<div className={styles.aboutContentBox}>
 								<p>
-									My real name is John Memmott, but am refered to by my username 
+									My real name is John Memmott, but am referred to by my username 
 									<span style={{color: "#FF613D"}}> RATIU5</span>.
 									I am a programmer who found a love for creating applications, websites
-									and AI tools. I created my first website when I was 13 and a year later, 
-									built my first computer. Altough my website was terrible and my computer 
-									was far from a luxurious gaming computer, I am still proud of my 
-									accomplishments. : )
+									and AI tools.
 								</p>
 							</div>
 							<div className={styles.aboutContentBox}>
