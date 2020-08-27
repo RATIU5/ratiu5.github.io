@@ -43,7 +43,7 @@ export default function Home() {
 							<img src="/avatar_op.png" className={styles.avatar}></img>
 							<div className={styles.devider}></div>
 							<h1 className={styles.title}>
-								John Memmott (RATIU5)
+								John Memmott
 							</h1>
 						</div>
 					</div>
