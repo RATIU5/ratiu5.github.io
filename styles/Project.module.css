@@ -101,14 +101,13 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
 
     .projectContainer {
         width: 100%;
         font-size: 1rem;
-        max-width: 550px;
         padding: 1rem;
-        margin: 1rem 0;
+        margin: 1rem 0.5rem;
     }
 
     .projectImage {
