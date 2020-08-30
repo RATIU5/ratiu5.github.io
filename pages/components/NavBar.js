@@ -1,6 +1,6 @@
 import React from 'react';
 import SocialLinks from './SocialLinks';
-import styles from '../../styles/Components.module.css';
+import styles from '../../styles/NavBar.module.css';
 import { MdMenu } from 'react-icons/md';
 
 

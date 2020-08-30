@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/Components.module.css'
+import styles from '../../styles/Background.module.css'
 
 
 class Square

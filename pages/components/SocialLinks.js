@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/Components.module.css'
+import styles from '../../styles/SocialLink.module.css'
 
 import { FaGithub, FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";

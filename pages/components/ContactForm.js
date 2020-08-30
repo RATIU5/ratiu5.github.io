@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/Components.module.css';
+import styles from '../../styles/ContactForm.module.css';
 
 
 import { MdEmail, MdPerson } from 'react-icons/md';

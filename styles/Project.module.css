@@ -1,0 +1,120 @@
+.projectContainer {
+    flex: 1;
+    display: inline-block;
+    padding: 1rem;
+    background: #F7F7FB;
+    max-width: 500px;
+    border-radius: 8px;
+    margin: 1rem 2rem;
+    border: none;
+    box-shadow: inset 0 -6px 0 0px #ff613d;
+    transform: translate(0 0);
+    transition: all ease 100ms;
+}
+
+.projectContainer:hover {
+    border: none;
+    box-shadow: inset 0 -6px 0 0px #ff613d, 0 6px 0 0 #ff613d;
+    transform: translateY(-6px);
+}
+
+.projectContainer:focus {
+    border: none;
+    box-shadow: inset 0 -6px 0 0px #ff613d, 0 6px 0 0 #ff613d;
+    transform: translateY(-6px);
+}
+
+.projectContainer:active {
+    border: none;
+    box-shadow: inset 0 -6px 0 0px #ff613d, 0 6px 0 0 #ff613d;
+    transform: translateY(-6px);
+}
+
+.projectContainer:hover .projectImage {
+    color: #545454;
+}
+
+.projectContainer:hover .projectTitleName {
+    color: #545454;
+}
+
+.projectContainer:hover .projectDescription {
+    color: #545454;
+}
+
+.projectContainer:focus .projectImage {
+    color: #545454;
+}
+
+.projectContainer:focus .projectTitleName {
+    color: #545454;
+}
+
+.projectContainer:focus .projectDescription {
+    color: #545454;
+}
+
+.projectContainer:active .projectImage {
+    color: #545454;
+}
+
+.projectContainer:active .projectTitleName {
+    color: #545454;
+}
+
+.projectContainer:active .projectDescription {
+    color: #545454;
+}
+
+.projectTitleName {
+    color: #2E2E2E;
+    transition: all ease 100ms;
+}
+
+.projectDescription {
+    padding: 1rem 0;
+    color: #2E2E2E;
+    transition: all ease 100ms;
+}
+
+.projectImage {
+    color: #2E2E2E;
+    font-size: 12rem;
+    float: left;
+    transition: all ease 100ms;
+}
+
+.projectMainContent {
+    flex: 1;
+    color: #545454;
+}
+
+.projectHeader {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    color: #545454;
+}
+
+.projectTitle {
+    padding: 1.5rem;
+}
+
+
+@media (max-width: 800px) {
+
+    .projectContainer {
+        width: 100%;
+        font-size: 1rem;
+        max-width: 350px;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .projectImage {
+        color: #2E2E2E;
+        font-size: 8rem;
+        transition: all ease 100ms;
+    }
+
+}

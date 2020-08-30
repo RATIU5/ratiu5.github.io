@@ -1,0 +1,27 @@
+
+.socialLinksContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #2E2E2E;
+}
+
+.socialLinkContainer {
+    color: #2E2E2E;
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.socialLink {
+    color: #2E2E2E;
+    border: none;
+}
+
+.socialLink:hover {
+    color: #545454;
+    border: none;
+}

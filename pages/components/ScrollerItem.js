@@ -1,4 +1,4 @@
-import styles from '../../styles/Components.module.css'
+import styles from '../../styles/ScrollerItem.module.css'
 
 export default function ScrollerItem(props)
 {
