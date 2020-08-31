@@ -121,7 +121,7 @@ export default function Home() {
 						<div className={styles.projectsContainer}>
 							<Project name="Hazel" url="https://github.com/RATIU5/Hazel" >
 								Hazel is a full-featured game engine with tools to make video-games.
-								I am learning howto do this by following along with Yan Chernikov (TheCherno) who has a
+								I am learning how to do this by following along with Yan Chernikov (TheCherno) who has a
 								YouTube series where he develops the Hazel game engine from scratch.
 							</Project>
 							<Project name="RATIU5" url="https://github.com/RATIU5/ratiu5.github.io">
