@@ -56,6 +56,10 @@
     color: #3EC7B6;
 }
 
+.projectLink:hover {
+    color: #33a194;
+}
+
 .projectDescription {
     font-size: 18px;
     color: #2E2E2E;

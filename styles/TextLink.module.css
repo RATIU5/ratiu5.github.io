@@ -1,0 +1,7 @@
+.textLinkContainer > a {
+    color: #3EC7B6;
+}
+
+.textLinkContainer > a:hover {
+    color: #33a194;
+}

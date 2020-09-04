@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import SectionHeader from './components/SectionHeader'
+import TextLink from './components/TextLink'
 import NavBar from './components/NavBar'
 import Project from './components/Project'
 import Scroller from './components/Scroller'
@@ -74,6 +75,7 @@ export default function Home() {
 							<ScrollerItem><SiJava /></ScrollerItem>
 							<ScrollerItem><SiIntellijidea /></ScrollerItem>
 							<ScrollerItem><SiPython /></ScrollerItem>
+							<ScrollerItem><SiCsharp /></ScrollerItem>
 							<ScrollerItem><SiHtml5 /></ScrollerItem>
 							<ScrollerItem><SiReact /></ScrollerItem>
 							<ScrollerItem><SiJavascript /></ScrollerItem>
@@ -85,12 +87,11 @@ export default function Home() {
 							<ScrollerItem><SiFilezilla /></ScrollerItem>
 							<ScrollerItem><SiVisualstudiocode /></ScrollerItem>
 							<ScrollerItem><BsFillTerminalFill /></ScrollerItem>
-							<ScrollerItem><SiMicrosoftexcel /></ScrollerItem>
 							<ScrollerItem><SiAdobephotoshop /></ScrollerItem>
 							<ScrollerItem><SiAdobepremiere /></ScrollerItem>
+							<ScrollerItem><SiMicrosoftexcel /></ScrollerItem>
 							<ScrollerItem><SiMicrosoftpowerpoint /></ScrollerItem>
 							<ScrollerItem><SiMicrosoftword /></ScrollerItem>
-							<ScrollerItem><SiCsharp /></ScrollerItem>
 						</Scroller>
 					</div>
 					
@@ -101,18 +102,19 @@ export default function Home() {
 
 				<div className={styles.projectsSection}>
 					<div className={styles.projectsContainer}>
-						<Project name="hazel" url="https://github.com/RATIU5/Hazel" date="July 2020 - Current">
+						<Project name="Hazel" url="https://github.com/RATIU5/Hazel" date="July 2020 - Current">
 							Hazel is a full-featured game engine with tools to make video-games.
-							I am learning how to do this by following along with Yan Chernikov (TheCherno) who has a
-							YouTube series where he develops the Hazel game engine from scratch.
+							This project is being done by following TheCherno's game engine series about
+							developing an entire game engine from scratch.
 						</Project>
-						<Project name="ratiu5.github.io" url="https://github.com/RATIU5/ratiu5.github.io" img="/ratius_web.png" date="August 2020 - Current">
-							ratiu5.github.io is my website, the one you are currently on! It was built with React using
-							Next.js. Feel free to check out the source code!
+						<Project name="RATIU5" url="https://github.com/RATIU5/ratiu5.github.io" img="/ratius_web.png" date="August 2020 - Current">
+							This is the current website you are on. It was created using React, 
+							specifically the <TextLink href="https://nextjs.org/">Next.js</TextLink> framework. Feel free to
+							browse the source code.
 						</Project>
-						<Project name="notesbook" url="https://github.com/RATIU5/notesbook-py" img="/notesbook.png" date="May 2017">
-							Notesbook is a very simple text editor, built 100% in Python! The GUI library used was Tkinter
-							which helps with opening and saving text documents.
+						<Project name="Notesbook" url="https://github.com/RATIU5/notesbook-py" img="/notesbook.png" date="May 2017">
+							Notesbook is a very simple text/note editor build entirely with Python. The GUI library used 
+							was Tkinter which helps with opening and saving text documents.
 						</Project>
 					</div>
 				</div> 
@@ -125,7 +127,7 @@ export default function Home() {
 						<div className={styles.aboutContentBox}>
 							<p>
 								My real name is John Memmott, but am referred to by my username 
-								<span style={{color: "#3EC7B6"}}> RATIU5</span>.
+								<span style={{color: "#33a194"}}> RATIU5</span>.
 								I am a web and software developer who found a love for creating applications, websites
 								and AI tools.
 							</p>
@@ -152,7 +154,7 @@ export default function Home() {
 				<div className={styles.space}></div>
 
 				<div className={styles.footerSection}>
-					&#169; Copyright 2020 | Made with ❤️<br></br>Source on <a href="https://github.com/RATIU5/ratiu5.github.io">GitHub</a>
+					&#169; Copyright 2020 | Made with ❤️<br></br>Source on <TextLink href="https://github.com/RATIU5/ratiu5.github.io">GitHub</TextLink>
 				</div>
 
 			</div>
