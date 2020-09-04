@@ -11,19 +11,19 @@ export default function SocialLinks()
         <div className={styles.socialLinksContainer}>
             
             <div className={styles.socialLinkContainer}>
-                <a href="https://github.com/RATIU5" className={styles.socialLink}><FaGithub /></a>
+                <a href="https://github.com/RATIU5" target="_blank" className={styles.socialLink}><FaGithub /></a>
             </div>
 
             <div className={styles.socialLinkContainer}>
-                <a href="https://www.linkedin.com/in/john-memmott-1a866318b/" className={styles.socialLink}><FaLinkedin /></a>
+                <a href="https://www.linkedin.com/in/john-memmott-1a866318b/" target="_blank" className={styles.socialLink}><FaLinkedin /></a>
             </div>
 
             <div className={styles.socialLinkContainer}>
-                <a href="https://www.youtube.com/channel/UCFQ5LXhdgnbgiU0gSIHpphw" className={styles.socialLink}><FaYoutube /></a>
+                <a href="https://www.youtube.com/channel/UCFQ5LXhdgnbgiU0gSIHpphw" target="_blank" className={styles.socialLink}><FaYoutube /></a>
             </div>
             
             <div className={styles.socialLinkContainer}>
-                <a href="https://twitter.com/RATIU51" className={styles.socialLink}><FaTwitter /></a>
+                <a href="https://twitter.com/RATIU51" target="_blank" className={styles.socialLink}><FaTwitter /></a>
             </div>
         </div>
     )

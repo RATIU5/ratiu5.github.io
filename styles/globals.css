@@ -7,22 +7,8 @@ body {
 }
 
 body {
-  background-color: #F7F7FB;
+  background-color: #f1f1f0;
 }
-
-a {
-  text-decoration: none;
-  color: #FF613D;
-  cursor: pointer;
-  border-bottom: 2px solid #FF613D;
-  transition: all ease 100ms;
-}
-
-a:hover {
-  color: #ff957d;
-  border-bottom: 2px solid #ff957d;
-}
-
 
 * {
   box-sizing: border-box;

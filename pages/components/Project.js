@@ -4,20 +4,24 @@ import { FaGithub } from "react-icons/fa";
 
 export default class Project extends React.Component
 {
+    UseImage() {
+        if (this.props.img != null)
+        {
+            return <img src={this.props.img} className={styles.projectImage} />;
+        }
+    }
 
     render() {
         return( 
-            <a href={this.props.url} className={styles.projectContainer}>
-                <div className={styles.projectHeader}>
-                    <FaGithub className={styles.projectImage} />
-                    <div className={styles.projectTitle}>
-                        <h1 className={styles.projectTitleName}>{this.props.name}</h1>
-                    </div>
+            <div className={styles.innerContainer}>
+                {this.UseImage()}
+                <div className={styles.projectDate}><i>{this.props.date}</i></div>
+                <div className={styles.projectLinkContainer}>
+                    <a href={this.props.url} className={styles.projectLink}>{this.props.name}</a>
                 </div>
-                <div className={styles.projectMainContent}>
-                    <div className={styles.projectDescription}>{this.props.children}</div>
-                </div>
-            </a>
+                <div className={styles.projectDescription}>{this.props.children}</div>
+                <div className={styles.projectOverlayContainer}></div>
+            </div>
         );
     }
 

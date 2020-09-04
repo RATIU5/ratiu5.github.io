@@ -1,0 +1,22 @@
+.projectsHeader {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    margin: 5rem 0;
+    text-align: center;
+    background: #3EC7B6;
+  }
+  
+  .projectsHeader > h3 {
+    position: relative;
+    height: 15px;
+    top: -8px;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 0;
+    line-height: 0;
+    font-weight: 400;
+    font-size: 35px;
+    color: #3EC7B6;
+    background: #f1f1f0;
+  }

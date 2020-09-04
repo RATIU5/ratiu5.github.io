@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Background from './components/Background'
+import SectionHeader from './components/SectionHeader'
 import NavBar from './components/NavBar'
 import Project from './components/Project'
 import Scroller from './components/Scroller'
@@ -11,8 +11,8 @@ import styles from '../styles/Home.module.css'
 import { BsFillTerminalFill } from 'react-icons/bs';
 import { SiGithub, SiGit, SiCss3, SiHtml5, SiJavascript, SiReact, SiSass, SiJava, SiOpengl, SiPython, SiVisualstudio, 
 		SiVisualstudiocode, SiIntellijidea, SiCplusplus, SiCmake, SiBlender, SiFilezilla, SiNodeDotJs, SiNpm,
-		SiAudacity } from "react-icons/si";
-import { RiFileExcel2Fill } from 'react-icons/ri';
+		SiAudacity, SiAdobephotoshop, SiAdobepremiere, SiMicrosoftpowerpoint, SiMicrosoftexcel, SiMicrosoftword,
+		SiCsharp } from "react-icons/si";
 
 export default function Home() {
 	return (
@@ -29,121 +29,133 @@ export default function Home() {
 
 			</Head>
 
-			<Background></Background>
 
-			<NavBar></NavBar>
+			<div className={styles.bounds}>
 
-				<div className={styles.mainContainer}>
+				<NavBar></NavBar>
+
+				<div className={styles.space}></div>
+
+				<div className={styles.openerSection}>
+					<table className={styles.openerTable}>
+						<tr>
+							<th>
+								<div className={styles.openerUpperContainer}>
+									<div className={styles.imgCon1}>
+										<div className={styles.imgCon2}>
+											<img src="/avatar_rotate.png" className={styles.avatar}></img>
+										</div>
+									</div>
+								</div>
+							</th>
+						</tr>
+						<tr>
+							<th>
+								<div className={styles.openerLowerContainer}>
+									<h2>
+										Software Developer &#183; Web Programmer &#183; Music Producer
+									</h2>
+								</div>
+							</th>
+						</tr>
+					</table>
 
 					<div className={styles.space}></div>
-					<div className={styles.space}></div>
 
-					<div className={styles.titleSection}>
-						<div className={styles.titleContainer}>
-							<img src="/avatar_op.png" className={styles.avatar}></img>
-							<div className={styles.devider}></div>
-							<h1 className={styles.title}>
-								John Memmott
-							</h1>
-						</div>
+					<div className={styles.detailsContainer}>
+						<Scroller>
+							<ScrollerItem><SiBlender /></ScrollerItem>
+							<ScrollerItem><SiAudacity /></ScrollerItem>
+							<ScrollerItem><SiGit /></ScrollerItem>
+							<ScrollerItem><SiGithub /></ScrollerItem>
+							<ScrollerItem><SiVisualstudio /></ScrollerItem>
+							<ScrollerItem><SiCplusplus /></ScrollerItem>
+							<ScrollerItem><SiOpengl /></ScrollerItem>
+							<ScrollerItem><SiJava /></ScrollerItem>
+							<ScrollerItem><SiIntellijidea /></ScrollerItem>
+							<ScrollerItem><SiPython /></ScrollerItem>
+							<ScrollerItem><SiHtml5 /></ScrollerItem>
+							<ScrollerItem><SiReact /></ScrollerItem>
+							<ScrollerItem><SiJavascript /></ScrollerItem>
+							<ScrollerItem><SiSass /></ScrollerItem>
+							<ScrollerItem><SiCss3 /></ScrollerItem>
+							<ScrollerItem><SiCmake /></ScrollerItem>
+							<ScrollerItem><SiNodeDotJs /></ScrollerItem>
+							<ScrollerItem><SiNpm /></ScrollerItem>
+							<ScrollerItem><SiFilezilla /></ScrollerItem>
+							<ScrollerItem><SiVisualstudiocode /></ScrollerItem>
+							<ScrollerItem><BsFillTerminalFill /></ScrollerItem>
+							<ScrollerItem><SiMicrosoftexcel /></ScrollerItem>
+							<ScrollerItem><SiAdobephotoshop /></ScrollerItem>
+							<ScrollerItem><SiAdobepremiere /></ScrollerItem>
+							<ScrollerItem><SiMicrosoftpowerpoint /></ScrollerItem>
+							<ScrollerItem><SiMicrosoftword /></ScrollerItem>
+							<ScrollerItem><SiCsharp /></ScrollerItem>
+						</Scroller>
 					</div>
-
-					<div className={styles.space}></div>
-					<div className={styles.space}></div>
-
-					<div id="about" className={styles.detailsSection}>
-						<div className={styles.detailsHeader}>
-							<h3>Skills & Experience</h3>
-						</div>
-						<div className={styles.detailsContainer}>
-							<Scroller>
-								<ScrollerItem info="Blender"><SiBlender /></ScrollerItem>
-								<ScrollerItem info="Audacity"><SiAudacity /></ScrollerItem>
-								<ScrollerItem info="Git"><SiGit /></ScrollerItem>
-								<ScrollerItem info="Github"><SiGithub /></ScrollerItem>
-								<ScrollerItem info="Visual Studio"><SiVisualstudio /></ScrollerItem>
-								<ScrollerItem info="C++"><SiCplusplus /></ScrollerItem>
-								<ScrollerItem info="OpenGL"><SiOpengl /></ScrollerItem>
-								<ScrollerItem info="Java"><SiJava /></ScrollerItem>
-								<ScrollerItem info="IntelliJ IDEA"><SiIntellijidea /></ScrollerItem>
-								<ScrollerItem info="Python"><SiPython /></ScrollerItem>
-								<ScrollerItem info="HTML5"><SiHtml5 /></ScrollerItem>
-								<ScrollerItem info="React"><SiReact /></ScrollerItem>
-								<ScrollerItem info="JavaScript"><SiJavascript /></ScrollerItem>
-								<ScrollerItem info="SASS"><SiSass /></ScrollerItem>
-								<ScrollerItem info="CSS"><SiCss3 /></ScrollerItem>
-								<ScrollerItem info="CMake"><SiCmake /></ScrollerItem>
-								<ScrollerItem info="Node.js"><SiNodeDotJs /></ScrollerItem>
-								<ScrollerItem info="npm"><SiNpm /></ScrollerItem>
-								<ScrollerItem info="FileZilla"><SiFilezilla /></ScrollerItem>
-								<ScrollerItem info="VS Code"><SiVisualstudiocode /></ScrollerItem>
-								<ScrollerItem info="Bash & Batch"><BsFillTerminalFill /></ScrollerItem>
-								<ScrollerItem info="Excel"><RiFileExcel2Fill /></ScrollerItem>
-							</Scroller>
-						</div>
-						<div className={styles.detailsTextMore}>& more!</div>
-					</div> 
-
-					<div className={styles.aboutSection}>
-						<div className={styles.aboutHeader}>
-							<h3>About me</h3>
-						</div>
-
-						<div className={styles.aboutContentContainer}>
-							<div className={styles.aboutContentBox}>
-								<p>
-									My real name is John Memmott, but am referred to by my username 
-									<span style={{color: "#FF613D"}}> RATIU5</span>.
-									I am a programmer who found a love for creating applications, websites
-									and AI tools.
-								</p>
-							</div>
-							<div className={styles.aboutContentBox}>
-								<p>
-									In my free time I love making <span style={{fontSize: "2.1rem"}}>music, </span> 
-									3D <span style={{fontSize: "1.6rem"}}>sculpting</span> in Blender, creating new recipes
-									to <span style={{fontSize: "1.8rem"}}>cook or bake</span> and even just
-									<span style={{fontSize: "2.3rem"}}> learning!</span> New technologies are always coming
-									out and it's important for me to stay up-to-date with the latest tools so I can better my 
-									programming experience. If I'm not programming, making beats, cooking or learning, you
-									can probably find me hiking and taking pictures in the mountains of the state of 
-									Washington.
-								</p>
-							</div>
-						</div>
-					</div> 
-
-					<div id="projects" className={styles.projectsSection}>
-						<div className={styles.projectsHeader}>
-							<h3>Projects</h3>
-						</div>
-
-						<div className={styles.projectsContainer}>
-							<Project name="Hazel" url="https://github.com/RATIU5/Hazel" >
-								Hazel is a full-featured game engine with tools to make video-games.
-								I am learning how to do this by following along with Yan Chernikov (TheCherno) who has a
-								YouTube series where he develops the Hazel game engine from scratch.
-							</Project>
-							<Project name="RATIU5" url="https://github.com/RATIU5/ratiu5.github.io">
-								jonratiu5.github.io is my website, the one you are currently on! It was built with React using
-								Next.js. Feel free to check out the source code!
-							</Project>
-							<Project name="Notesbook" url="https://github.com/RATIU5/notesbook-py">
-								Notesbook is a very simple text editor, built 100% in Python! The GUI library used was Tkinter
-								which helps with opening and saving text documents.
-							</Project>
-						</div>
-					</div> 
-
-					<div id="contact" className={styles.contactSection}>
-						<ContactForm />
-					</div>
-
-					<div className={styles.footerSection}>
-						&#169; Copyright 2020 | Made with ❤️<br></br>Source on <a href="https://github.com/RATIU5/ratiu5.github.io">GitHub</a>
-					</div>
-
+					
 				</div>
+
+				<span id="linkProjects"></span>
+				<SectionHeader id="linkProjects">What I'm working on</SectionHeader>
+
+				<div className={styles.projectsSection}>
+					<div className={styles.projectsContainer}>
+						<Project name="hazel" url="https://github.com/RATIU5/Hazel" date="July 2020 - Current">
+							Hazel is a full-featured game engine with tools to make video-games.
+							I am learning how to do this by following along with Yan Chernikov (TheCherno) who has a
+							YouTube series where he develops the Hazel game engine from scratch.
+						</Project>
+						<Project name="ratiu5.github.io" url="https://github.com/RATIU5/ratiu5.github.io" img="/ratius_web.png" date="August 2020 - Current">
+							ratiu5.github.io is my website, the one you are currently on! It was built with React using
+							Next.js. Feel free to check out the source code!
+						</Project>
+						<Project name="notesbook" url="https://github.com/RATIU5/notesbook-py" img="/notesbook.png" date="May 2017">
+							Notesbook is a very simple text editor, built 100% in Python! The GUI library used was Tkinter
+							which helps with opening and saving text documents.
+						</Project>
+					</div>
+				</div> 
+
+				<span id="linkAbout"></span>
+				<SectionHeader>About me</SectionHeader>
+
+				<div className={styles.aboutSection}>
+					<div className={styles.aboutContentContainer}>
+						<div className={styles.aboutContentBox}>
+							<p>
+								My real name is John Memmott, but am referred to by my username 
+								<span style={{color: "#3EC7B6"}}> RATIU5</span>.
+								I am a web and software developer who found a love for creating applications, websites
+								and AI tools.
+							</p>
+						</div>
+						<div className={styles.aboutContentBox}>
+							<p>
+								In my free time I love making <b>music</b>, making <b>art</b> in Blender, creating 
+								new recipes to <b>cook or bake</b> and even just <b>learning</b>! New technologies 
+								are always coming out and it's important for me to stay up-to-date with the latest 
+								tools so I can better my programming experience. If I'm not programming, making beats, 
+								cooking or learning, you can probably find me hiking and taking pictures in the mountains.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<span id="linkContact"></span>
+				<SectionHeader>Message me</SectionHeader>
+
+				<div id="contact" className={styles.contactSection}>
+					<ContactForm />
+				</div>
+
+				<div className={styles.space}></div>
+
+				<div className={styles.footerSection}>
+					&#169; Copyright 2020 | Made with ❤️<br></br>Source on <a href="https://github.com/RATIU5/ratiu5.github.io">GitHub</a>
+				</div>
+
+			</div>
 
 		</div>
 	)

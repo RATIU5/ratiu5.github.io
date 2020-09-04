@@ -19,7 +19,7 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
-    box-shadow: inset -110px 0 30px -30px #F7F7FB, inset 110px 0 30px -30px #F7F7FB;
+    box-shadow: inset -110px 0 30px -30px #f1f1f0, inset 110px 0 30px -30px #f1f1f0;
 }
 
 .scroller {
@@ -39,7 +39,7 @@
 
 @keyframes moveSlideshow {
     100% { 
-      transform: translateX(-2992px);
+      transform: translateX(-2860px);
     }
 }
 
@@ -48,12 +48,12 @@
 
     @keyframes moveSlideshow {
         100% { 
-          transform: translateX(-1830px);
+          transform: translateX(-2863px);
         }
     }
 
     .scrollBox .scroller {
-        animation: moveSlideshow 30s linear infinite;
+        animation: moveSlideshow 40s linear infinite;
     }
 
     .scrollerOverlay {
