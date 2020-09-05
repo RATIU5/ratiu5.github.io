@@ -12,7 +12,7 @@
 .labelIcon {
   left: 0;
   position: absolute;
-  margin: 2rem 0 0 3rem;
+  margin: 33px 0 0 3rem;
   font-size: 1.6rem;
   color: #5f5f5f;
 }
@@ -68,8 +68,8 @@
   min-width: 350px;
   max-width: 900px;
   background: #f1f1f0;
-  outline: none;
   border: solid 4px #a3a3a3;
+  outline: none;
   box-shadow: none;
 }
 
@@ -117,14 +117,14 @@
 @media (max-width: 600px) {
 
   .contactForm {
-    padding: 0.75rem;
+    padding: 0.3rem;
     margin: 0 0;
     width: auto;
   }
 
   .labelIcon {
     left: -15px;
-    margin: 2rem 0 0 3rem;
+    margin: 33px 0 0 2rem;
   }
 
 }
