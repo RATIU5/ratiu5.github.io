@@ -127,12 +127,7 @@
     margin: 33px 0 0 2rem;
   }
 
-  @supports (-webkit-touch-callout: none) {
-    .labelIcon {
-      left: -15px;
-      margin: -100px 0 0 2rem;
-    }
-  }
+
 
 }
 
