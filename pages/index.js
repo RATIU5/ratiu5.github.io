@@ -20,15 +20,14 @@ export default function Home() {
 		<div className={styles.container}>
 			<Head>
 				<title>RATIU5</title>
-				<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"></link>
+				<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
 				<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
 				<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
 				<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
 				<link rel="manifest" href="/favicons/site.webmanifest" />
-				<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#ff613d" />
-				<meta name="msapplication-TileColor" content="#da532c" />
+				<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+				<meta name="msapplication-TileColor" content="#00aba9" />
 				<meta name="theme-color" content="#ffffff" />
-
 			</Head>
 
 
@@ -118,8 +117,8 @@ export default function Home() {
 							spaceships to survive. This was programmed in C++ using the freeglut library.
 						</Project>
 						<Project name="Notesbook" url="https://github.com/RATIU5/notesbook-py" img="/projects/notesbook.png" date="May 2017">
-							Notesbook is a very simple text/note editor build entirely with Python. The GUI library used 
-							was Tkinter which helps with opening and saving text documents.
+							Notesbook is a very simple text/note editor build entirely with Python. You can open, read, and save 
+							many types of files. The GUI library used is Tkinter.
 						</Project>
 					</div>
 				</div> 
@@ -133,7 +132,7 @@ export default function Home() {
 							<p>
 								My real name is John Memmott, but am referred to by my username 
 								<span style={{color: "#33a194"}}> RATIU5</span>.
-								I am a web and software developer who found a love for creating applications, websites
+								I am a software and web developer who found a love for creating applications, websites
 								and AI tools.
 							</p>
 						</div>

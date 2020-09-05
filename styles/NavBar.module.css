@@ -7,6 +7,8 @@
 .menuCheckbox
 {
     display: none;
+    width: 100px;
+    height: 100px;
 }
 
 .navMenuContainer {
@@ -22,7 +24,6 @@
 }
 
 .navLink {
-    
     max-width: 100px;
     position: relative;
     display: inline-block;
@@ -40,12 +41,10 @@
 }
 
 .menuCheckIcon {
-    width: 100px;
+    padding-left: 20px;
+    font-size: 45px;
     display: none;
     color: #5f5f5f;
-    font-size: 4rem;
-    line-height: 90px;
-    padding: 0 1rem;
     cursor: pointer;
 }
 
@@ -58,7 +57,7 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 
     .navBarContainer {
         position: absolute;

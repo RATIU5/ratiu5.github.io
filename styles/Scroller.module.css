@@ -35,8 +35,6 @@
 }
 
 
-  
-
 @keyframes moveSlideshow {
     100% { 
       transform: translateX(-2860px);
@@ -44,7 +42,7 @@
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
 
     @keyframes moveSlideshow {
         100% { 
