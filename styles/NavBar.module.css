@@ -31,12 +31,12 @@
 }
 
 .navLink > a {
-    color: #3EC7B6;
+    color: #52cdbe;
     font-weight: 500;
     font-size: 1.5rem;
 }
 .navLink > a:hover {
-    color: #33a194;
+    color: #39b0a3;
 }
 
 .menuCheckIcon {
@@ -50,11 +50,11 @@
 }
 
 .menuCheckIcon:hover {
-    color: #3EC7B6;
+    color: #52cdbe;
 }
 
 .menuCheckIcon:focus {
-    color: #3EC7B6;
+    color: #52cdbe;
 }
 
 
@@ -98,7 +98,7 @@
 
     .menuCheckbox:checked + .menuCheckIcon
     {
-        color: #33a194;
+        color: #39b0a3;
     }
 
 }

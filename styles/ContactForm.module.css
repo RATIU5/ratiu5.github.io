@@ -30,11 +30,11 @@
   }
 
   .textInput:focus + .labelIcon {
-    color: #3EC7B6 !important;
+    color: #52cdbe !important;
   }
   
   .formItem > input:focus {
-    border: dashed 4px #3EC7B6;
+    border: dashed 4px #52cdbe;
   }
   
   .formItem > input::-webkit-input-placeholder {
@@ -59,8 +59,10 @@
     padding: 1rem;
     font-size: 1.2rem;
     color: #2E2E2E;
-    min-width: 20rem;
-    width: 30rem;
+    height: 200px;
+    width: 500px;
+    min-width: 350px;
+    max-width: 900px;
     background: #f1f1f0;
     outline: none;
     border: solid 4px #a3a3a3;
@@ -68,7 +70,7 @@
   }
   
   .contactForm > textarea:focus {
-    border: dashed 4px #3EC7B6;
+    border: dashed 4px #52cdbe;
   }
   
   .contactForm > textarea::-webkit-input-placeholder {
@@ -103,8 +105,8 @@
   
   .contactForm > button:hover {
     background: #f1f1f0;
-    box-shadow: inset 0 0 0 4px #3EC7B6;
-    color: #33a194;
+    box-shadow: inset 0 0 0 4px #52cdbe;
+    color: #39b0a3;
 }
 
 @media (max-width: 610px) {
@@ -116,17 +118,11 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 350px;
   }
 
   .contactForm > textarea {
-    margin: 1rem -1rem;
-    padding: 1rem;
-    font-size: 1.2rem;
-    color: #2E2E2E;
-    max-width: 300px;
-    background: #f1f1f0;
-    outline: none;
+    width: 350px;
+    max-width: 375;
   }
 
 }

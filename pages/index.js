@@ -20,6 +20,7 @@ export default function Home() {
 		<div className={styles.container}>
 			<Head>
 				<title>RATIU5</title>
+				<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"></link>
 				<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
 				<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
 				<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
@@ -98,7 +99,7 @@ export default function Home() {
 				</div>
 
 				<span id="linkProjects"></span>
-				<SectionHeader id="linkProjects">What I'm working on</SectionHeader>
+				<SectionHeader id="linkProjects">Projects</SectionHeader>
 
 				<div className={styles.projectsSection}>
 					<div className={styles.projectsContainer}>
@@ -107,12 +108,16 @@ export default function Home() {
 							This project is being done by following TheCherno's game engine series about
 							developing an entire game engine from scratch.
 						</Project>
-						<Project name="RATIU5" url="https://github.com/RATIU5/ratiu5.github.io" img="/ratius_web.png" date="August 2020 - Current">
+						<Project name="RATIU5" url="https://github.com/RATIU5/ratiu5.github.io" img="/favicons/mstile-144x144.png" date="August 2020">
 							This is the current website you are on. It was created using React, 
 							specifically the <TextLink href="https://nextjs.org/">Next.js</TextLink> framework. Feel free to
 							browse the source code.
 						</Project>
-						<Project name="Notesbook" url="https://github.com/RATIU5/notesbook-py" img="/notesbook.png" date="May 2017">
+						<Project name="Asteroids" url="https://github.com/RATIU5/asteroids" img="/projects/asteroids.png" date="November 2019">
+							A recreation of Atari's Asteroids game from 1979. The player must avoid obsticles while shooting asteroids and alien
+							spaceships to survive. This was programmed in C++ using the freeglut library.
+						</Project>
+						<Project name="Notesbook" url="https://github.com/RATIU5/notesbook-py" img="/projects/notesbook.png" date="May 2017">
 							Notesbook is a very simple text/note editor build entirely with Python. The GUI library used 
 							was Tkinter which helps with opening and saving text documents.
 						</Project>

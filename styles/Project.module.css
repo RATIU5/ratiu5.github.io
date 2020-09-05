@@ -41,7 +41,7 @@
     width: 150px;
     height: 150px;
     padding: 0.75rem;
-    border: 4px solid #3EC7B6;
+    border: 4px solid #52cdbe;
 }
 
 .projectLinkContainer {
@@ -53,11 +53,11 @@
 .projectLink {
     font-size: 25px;
     font-weight: 600;
-    color: #3EC7B6;
+    color: #52cdbe;
 }
 
 .projectLink:hover {
-    color: #33a194;
+    color: #39b0a3;
 }
 
 .projectDescription {
