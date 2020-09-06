@@ -130,7 +130,7 @@ export default function Home() {
 					<div className={styles.aboutContentContainer}>
 						<div className={styles.aboutContentBox}>
 							<p>
-								My real name is John Memmott, but am referred to by my username 
+								My real name is John Memmott, but am referred to online by my username 
 								<span style={{color: "#33a194"}}> RATIU5</span>.
 								I am a software and web developer who found a love for creating applications, websites
 								and AI tools.
