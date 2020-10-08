@@ -1,5 +1,5 @@
 
-export function Horizontal(props)
+export default function Horizontal(props)
 {
     let ParentStyle = 
     {

@@ -1,5 +1,5 @@
 
-export function Label(props)
+export default function Label(props)
 {
 
     let styles = {

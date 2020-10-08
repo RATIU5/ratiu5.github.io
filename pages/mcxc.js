@@ -1,9 +1,8 @@
-import { Vertical, Horizontal, Center, Size } from './components/Alignment';
-import { Label, Button } from './components/Widgets';
+import Horizontal, { Vertical, Center, Size } from './components/Alignment';
+import Label, { Button } from './components/Widgets';
 import Console, { ConsoleLine } from './components/Console';
 import styles from '../styles/mcxc.module.css';
 import Head from 'next/head'
-import { createRef } from 'react';
 
 let getTime = (time) =>
     {
