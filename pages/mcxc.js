@@ -6,10 +6,11 @@ import Head from 'next/head'
 
 let getTime = (time) =>
     {
-        let m = String(Math.floor(time / 1000 / 60) + 100).substring(1);
+        let h = String(Math.floor(time / 3600 / 1000) + 100).substring(1);
+        let m = String(Math.floor(time / 60 / 1000) + 100).substring(1);
         let s = String(Math.floor((time % (1000 * 60)) / 1000) + 100).substring(1);
-        let ms = String(time % 1000 + 1000).substring(1);
-        return m + ":" + s + "." + ms; 
+        let ms = String(time % 1000 + 1000).substring(1, 2);
+        return h + ":" + m + ":" + s + "." + ms; 
     }
 
 export default class MCXC extends React.Component
@@ -123,7 +124,7 @@ export default class MCXC extends React.Component
             <div className={styles.parent}>
 
                 <Size width="100vw" minWidth="20rem" maxWidth="40rem" 
-                    height="100vh" minHeight="30rem" maxHeight="70rem" 
+                    height="100vh" minHeight="30rem" maxHeight="55rem" 
                     className={styles.mainContainer}>
                     <Horizontal>
                         <Head>
@@ -146,7 +147,7 @@ export default class MCXC extends React.Component
                         <Center flex={10}>
                             <Console>
                                 { this.state.swRecords.map( function(record) {
-                                    return <ConsoleLine key={record.id}>{getTime(record.time)}</ConsoleLine>
+                                    return <ConsoleLine key={record.id} id={record.id}>{getTime(record.time)}</ConsoleLine>
                                 }, this) }
                             </Console>
                         </Center>
@@ -160,7 +161,7 @@ export default class MCXC extends React.Component
                             </Center>
                             <Center>
                                 <Label size="1.75" className={styles.timeLabel}>
-                                    { String(getTime(this.state.swTime)) }
+                                    { getTime(this.state.swTime) }
                                 </Label>
                             </Center>
                             <Center>

@@ -42,7 +42,7 @@ export default class Console extends React.Component
             return;
         }
 
-        if (document.selection)
+        if (document.selection) // for IE
         {
             var range = document.body.createTextRange();
             range.moveToElementText(this.console.current);
@@ -53,14 +53,16 @@ export default class Console extends React.Component
             let range = document.createRange();
             range.selectNode(this.console.current);
             window.getSelection().addRange(range);
+
         }
     }
 
-    copyConsoleText = () =>
+    copyConsoleText = (e) =>
     {
         this.selectConsoleText();
         if (document.execCommand("copy"))
         {
+            document.getSelection().removeAllRanges();
             this.setState({
                 copied: true
             });
